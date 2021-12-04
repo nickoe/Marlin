@@ -100,6 +100,7 @@
 //
 #define PS_ON_PIN                             15
 
+//#define CASE_LIGHT_PIN   16
 #ifndef CASE_LIGHT_PIN
   #define CASE_LIGHT_PIN                      15  // Hardware PWM
 #endif
@@ -114,6 +115,6 @@
 //
 // M3/M4/M5 - Spindle/Laser Control
 //
-#define SPINDLE_LASER_ENA_PIN                 20  // Pullup or pulldown!
-#define SPINDLE_LASER_PWM_PIN                 16  // Hardware PWM
-#define SPINDLE_DIR_PIN                       21
+//#define SPINDLE_LASER_ENA_PIN                 20  // Pullup or pulldown!
+//#define SPINDLE_LASER_PWM_PIN                 16  // Hardware PWM
+//#define SPINDLE_DIR_PIN                       21

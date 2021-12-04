@@ -94,7 +94,7 @@ AVR_TOOLS_PATH ?=
 
 # Programmer configuration
 UPLOAD_RATE        ?= 57600
-AVRDUDE_PROGRAMMER ?= arduino
+AVRDUDE_PROGRAMMER ?= usbasp
 # On most linuxes this will be /dev/ttyACM0 or /dev/ttyACM1
 UPLOAD_PORT        ?= /dev/ttyUSB0
 
@@ -479,9 +479,9 @@ else ifeq ($(HARDWARE_MOTHERBOARD),1604)
 # Gen7 v1.1, v1.2
 else ifeq ($(HARDWARE_MOTHERBOARD),1605)
   HARDWARE_VARIANT ?= Gen7
-  MCU              ?= atmega644p
-  PROG_MCU         ?= m644p
-  F_CPU            ?= 20000000
+  MCU              ?= atmega644
+  PROG_MCU         ?= m644
+  F_CPU            ?= 16000000
 # Gen7 v1.3
 else ifeq ($(HARDWARE_MOTHERBOARD),1606)
   HARDWARE_VARIANT ?= Gen7
@@ -491,9 +491,9 @@ else ifeq ($(HARDWARE_MOTHERBOARD),1606)
 # Gen7 v1.4
 else ifeq ($(HARDWARE_MOTHERBOARD),1607)
   HARDWARE_VARIANT ?= Gen7
-  MCU              ?= atmega1284p
-  PROG_MCU         ?= m1284p
-  F_CPU            ?= 20000000
+  MCU              ?= atmega644
+  PROG_MCU         ?= m644
+  F_CPU            ?= 16000000
 # Alpha OMCA board
 else ifeq ($(HARDWARE_MOTHERBOARD),1608)
   HARDWARE_VARIANT ?= SanguinoA
